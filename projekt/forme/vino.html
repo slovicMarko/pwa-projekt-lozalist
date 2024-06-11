@@ -1,0 +1,102 @@
+<form
+  action="forme/vino_upload_skripta.php"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <div class="form-item">
+    <label for="title">Ime vina</label>
+    <div class="form-field">
+      <span id="porukaNaziv" class="bojaPoruke"></span>
+      <input
+        id="title"
+        type="text"
+        name="title"
+        class="form-field-textual"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-item">
+    <span id="porukaKratkiOpis" class="bojaPoruke"></span>
+    <label for="about">Kratki opis vina</label>
+    <div class="form-field">
+      <textarea
+        id="shortContent"
+        name="about"
+        cols="30"
+        rows="3"
+        class="form-field-textual"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <div class="form-item">
+    <span id="porukaDuziOpis" class="bojaPoruke"></span>
+    <label for="content">Detaljni opis sorte</label>
+    <div class="form-field">
+      <textarea
+        id="longContent"
+        name="content"
+        cols="30"
+        rows="10"
+        class="form-field-textual"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <div class="form-item">
+    <span id="porukaSlika" class="bojaPoruke"></span>
+    <label for="pphoto">Slika: </label>
+    <div class="form-field">
+      <input
+        id="photo"
+        type="file"
+        accept="image/jpg,image/png,image/jpeg"
+        class="input-text"
+        name="pphoto"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-item">
+    <label for="category">Slatkoća</label>
+    <div class="form-field">
+      <select id="category" name="category" class="form-field-textual" required>
+        <option value="suho">Suho</option>
+        <option value="polusuho">Polusuho</option>
+        <option value="poluslatko">Poluslatko</option>
+        <option value="slatko">Slatko</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-item">
+    <span id="porukaBojaVina" class="bojaPoruke"></span>
+    <label for="boja">Boja vina:</label>
+    <div class="form-field">
+      <input type="radio" name="boja" value="Bijelo" id="bijelo" required />
+      <label for="bijelo">Bijelo</label><br />
+      <input type="radio" name="boja" value="Crno" id="crno" required />
+      <label for="crno">Crno</label><br />
+      <input type="radio" name="boja" value="Rose" id="rose" required />
+      <label for="rose">Rose</label><br />
+    </div>
+  </div>
+  <div class="form-item">
+    <span id="porukaPreporucenaJela" class="bojaPoruke"></span>
+    <label for="preporucenaJela">Preporučena jela</label>
+    <div class="form-field">
+      <textarea
+        id="recomendedDishes"
+        name="preporucenaJela"
+        cols="30"
+        rows="5"
+        class="form-field-textual"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <div class="form-item">
+    <button type="reset" value="Poništi">Poništi</button>
+    <button id="saveBtn" type="submit" value="Prihvati">Prihvati</button>
+  </div>
+</form>
