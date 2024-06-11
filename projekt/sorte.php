@@ -19,7 +19,7 @@
             $vina = dohvatiVina();
 
             foreach ($vina as $index => $vino) {
-                echo '<a href="article_sorta.php?index=' . $index . '&naziv=' . urlencode($vino["naziv"]) . '&image=' . urlencode($vino["slika"]) . '&kratkiOpis=' . urlencode($vino["kratkiOpis"]) . '&duziOpis=' . urlencode($vino["duziOpis"]) . '&boja=' . urlencode($vino["boja"]) . '&slatkoca=' . urlencode($vino["slatkoca"]) . '&godinaBerbe=' . urlencode($vino["godinaBerbe"]) . '&preporucenaJela=' . urlencode($vino["preporucenaJela"]) . '&date=' . urlencode($vino["datumObjavljivanja"]) . '">';
+                echo '<a href="article_sorta.php?index=' . $index . '&naziv=' . urlencode($vino["naziv"]) . '&image=' . urlencode($vino["slika"]) . '&kratkiOpis=' . urlencode($vino["kratkiOpis"]) . '&duziOpis=' . urlencode($vino["duziOpis"]) . '&boja=' . urlencode($vino["boja"]) . '&slatkoca=' . urlencode($vino["slatkoca"]) . '&preporucenaJela=' . urlencode($vino["preporucenaJela"]) . '&date=' . urlencode($vino["datumObjavljivanja"]) . '">';
                 echo '<article class="card">';
                 echo '<img src="' . $vino["slika"] . '" alt="slika" />';
                 echo '<div class="article-text">';
