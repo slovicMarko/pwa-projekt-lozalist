@@ -1,0 +1,85 @@
+* {
+  margin: 0 auto;
+  color: rgb(26, 26, 26);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin: 0 0 48px 0;
+  padding: 36px 0 14px 0;
+  background-color: #eee;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 8px;
+}
+
+nav h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  padding: 0 0 24px 0;
+}
+
+main {
+  flex: 1;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+footer {
+  background-color: #eee;
+  padding: 24px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.article-container {
+  margin: 0 10%;
+}
+
+.slika {
+  max-width: 450px;
+  margin: 16px 0;
+}
+
+.duziOpis {
+  font-size: 24px;
+}
+
+.stavak-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.boja,
+.slatkoca,
+.preporucena-jela,
+.datumObjave {
+  font-size: 20px;
+  margin: 0 0 0 10px;
+  width: fit-content;
+}
+
+.naslov-stavka {
+  width: fit-content;
+  margin: 0;
+}
